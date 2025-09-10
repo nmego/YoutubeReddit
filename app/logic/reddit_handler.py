@@ -6,7 +6,6 @@ from PyQt6.QtCore import QThread, pyqtSignal
 from dotenv import load_dotenv
 import praw
 
-# Load environment variables
 load_dotenv()
 
 class RedditWorker(QThread):

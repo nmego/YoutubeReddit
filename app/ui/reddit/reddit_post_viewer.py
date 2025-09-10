@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
 from PyQt6.QtGui import QFont, QPixmap
 from dotenv import load_dotenv
-from custom_scroll import CustomScrollArea
+from ..shared.custom_scroll import CustomScrollArea
 
 load_dotenv()
 

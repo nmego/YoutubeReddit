@@ -1,12 +1,13 @@
-from PyQt6.QtWidgets import (QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
+﻿from PyQt6.QtWidgets import (QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
                             QHBoxLayout, QPushButton, QLabel, QMessageBox, 
                             QProgressBar, QStackedWidget)
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
-from widgets import YouTubeTab, RedditPostFrame
-from reddit_handler import RedditWorker
-from reddit_post_viewer import RedditPostViewer
-from custom_scroll import CustomScrollArea
+from ..logic.reddit_handler import RedditWorker
+from .reddit.reddit_post_viewer import RedditPostViewer
+from .shared.custom_scroll import CustomScrollArea
+from .youtube.youtube_widgets import YouTubeTab
+from .reddit.reddit_widgets import RedditPostFrame
 
 class RedditTab(QWidget):
     def __init__(self):
